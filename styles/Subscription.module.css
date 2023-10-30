@@ -1,0 +1,191 @@
+.eventWrapper {
+    max-width: var(--max-width);
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventEditTitle {
+    padding: 60px 0 16px 0;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: var(--font-co-headline-corp);
+}
+
+.eventEditSubTitle {
+    padding-bottom: 80px;
+    font-size: 21px;
+    font-family: var(--font-montserrat);
+}
+
+.eventSteps {
+    padding-bottom: 46px;
+}
+
+.eventError {
+    border-color: red;
+}
+
+.eventStepTitle {
+    font-size: 21px;
+}
+
+.eventButtonWrapper {
+    margin-top: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.eventEditBaseInfoMainImageWrapper {
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+
+.eventEditBaseInfoTitleWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 64px 0;
+    gap: 0 24px;
+}
+
+.eventEditBaseInfoLogoWrapper {
+    min-height: 64px;
+    width: 64px;
+    position: relative;
+}
+
+.eventEditBaseInfoTitle {
+    width: 100%;
+    padding: 0 24px;
+}
+
+.eventEditBaseInfoSecondWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 64px;
+    max-height: 430px;
+}
+
+.eventEditBaseInfoPreviewImageWrapper {
+    min-width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.eventEditBaseInfoDescriptionWrapper {
+    width: 100vw;
+    max-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.eventEditBaseInfoPriceWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.eventEditBaseInfoPriceWrapper * {
+    font-family: var(--font-montserrat);
+}
+
+.inputShadow {
+    /*border: none;*/
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.eventEditBaseInfoDescription {
+    padding: 42px;
+}
+
+.integrationFlowWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.integrationTokenInput {
+    margin-top: 32px;
+    width: 720px;
+    height: 64px;
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+}
+
+.integrationStepWrapper {
+    padding-top: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+}
+
+.integrationLink {
+    color: #6dad11;
+}
+
+.integrationLink:hover {
+    text-decoration: underline;
+}
+
+.integrationStepIndex {
+    width: 64px;
+    height: 64px;
+    font-size: 24px;
+    font-family: var(--font-co-headline-corp);
+    font-weight: bold;
+    border: 1px solid #000000;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.integrationStepContentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.integrationStepTitleWrapper {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.integrationStepDescriptionWrapper {
+    position: relative;
+    padding: 18px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-radius: 14px;
+}
+
+.integrationStepHero {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -153px;
+    right: -72px;
+}

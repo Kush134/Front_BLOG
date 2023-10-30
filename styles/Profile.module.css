@@ -1,0 +1,271 @@
+.gridWrapper {
+  max-width: calc(var(--max-width) + 40px);
+  width: 100vw;
+  min-height: 100%;
+  padding: 0 20px;
+  margin: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: var(--max-width);
+  max-width: 100%;
+  display: grid;
+  column-gap: 80px;
+  row-gap: 64px;
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.profileDescription {
+  min-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.lineBreak {
+  white-space: pre-wrap;
+  font-size: 21px;
+  margin: 0;
+  overflow: hidden;
+  min-height: 119px !important;
+  height: 119px !important;
+}
+
+.lineBreak * {
+  font-size: inherit;
+  margin: inherit;
+}
+
+.titleInput {
+  overflow: hidden;
+  border-radius: 14px;
+  border-style: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+  font-size: 48px;
+  font-family: var(--font-co-headline-corp);
+  background-color: transparent;
+  padding: 0 20px;
+}
+
+.descriptionInput {
+  overflow: hidden;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: transparent;
+  min-height: 119px !important;
+  height: 119px !important;
+  border-radius: 14px;
+  border-style: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.donateArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.donateButtonsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cardSize {
+  width: 75px;
+  height: 75px;
+}
+
+.card {
+  position: relative;
+  border: none;
+}
+
+.cardImage {
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.125s ease;
+}
+
+.cardImage:hover {
+  transform: scale(1.03);
+}
+
+.cardDeleteButton {
+  cursor: pointer;
+  position: absolute;
+  right: -10px;
+  top: -15px;
+  /*padding: 5px;*/
+  z-index: 1;
+  color: black;
+}
+
+.addCardButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23837F7FFF' stroke-width='1' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+  cursor: pointer;
+  transition: 0.125s ease;
+}
+
+.addCardButtonBg {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23837F7FFF' stroke-width='1' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+}
+
+.addCardButtonErrorBg {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='red' stroke-width='1' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+}
+
+.addCardButton:hover {
+  transform: scale(1.03);
+}
+
+.cardDeleteButton:hover {
+  transform: scale(1.03);
+  color: red;
+}
+
+.logoDeleteButton {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  padding: 10px;
+  z-index: 1;
+  color: red;
+}
+
+.logoDeleteButton:hover {
+  transform: scale(1.03);
+}
+
+.draggerWrapper {
+  width: 100%;
+  height: 100%;
+  transition: 0.125s ease;
+}
+
+.draggerWrapper:hover {
+  transform: scale(1.03);
+}
+
+.personIcon {
+  margin: 0;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.errorBorder {
+  border: 1px solid red;
+}
+
+.logoProfile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+  min-height: 350px;
+  width: 350px;
+  height: 350px;
+  align-self: center;
+}
+
+.logo {
+  position: relative;
+}
+
+.socialMediaLinksContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 34px;
+  /* justify-content: left; */
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  min-width: 350px;
+  min-height: 350px;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.icon {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 0 20px;
+}
+
+.embeddedComponent {
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.showComponent {
+  transform: translateX(0%);
+}
+
+.hideComponent {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1090px) {
+  .grid {
+    flex-direction: column;
+  }
+
+  .socialMediaLinksContainer {
+    margin-top: 30px;
+  }
+
+  .donateArea {
+    flex-direction: column;
+  }
+
+  .donateArea * {
+    margin: 10px 0;
+  }
+}

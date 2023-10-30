@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background: linear-gradient(
+    to bottom,
+    white,
+    white,
+    white,
+    white,
+    transparent
+  );
+  z-index: 999;
+}
+
+.header_description {
+  display: inherit;
+  justify-content: space-between;
+  align-items: center;
+  max-width: calc(var(--max-width) + 40px);
+  width: 100%;
+  z-index: 2;
+  margin: 30px 0;
+  height: 56px;
+  padding: 0 20px;
+}
+
+/* .saveBtnFromHeader {
+  height: 100%;
+  width: 100%;
+  border: none;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  padding: 0;
+  font-family: var(--font-montserrat);
+  transition: 0.125s ease;
+  color: black !important;
+}
+
+.saveBtnFromHeader:hover {
+  transform: scale(1.03);
+} */
+
+.logo_nodde {
+  min-width: 578px;
+  width: 100%;
+  height: 113px;
+  margin: 40px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../pages/images/logo_nodde.png");
+}

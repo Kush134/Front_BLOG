@@ -1,0 +1,43 @@
+.donateInnerRow {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.donateModelDoneButton {
+  width: 247px;
+  height: 57px;
+  color: #000;
+  font-family: var(--font-co-headline-corp);
+  font-size: 21px;
+  border-radius: 14px;
+}
+
+.donateModalOkButton {
+  background-color: var(--primary-green-color);
+}
+
+.donateModalOkButton:hover:enabled {
+  color: #000 !important;
+  background-color: var(--primary-green-color) !important;
+  transform: scale(1.05);
+}
+
+.donateModalCancelButton {
+  margin-right: 10px;
+}
+
+.donateModalCancelButton:hover {
+  color: #000 !important;
+  transform: scale(1.05);
+  border-color: #d9d9d9 !important;
+}
+
+.donateInnerInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 185px;
+}

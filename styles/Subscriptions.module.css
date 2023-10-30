@@ -1,0 +1,134 @@
+.subscriptionsWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.subscriptionsTitle {
+  font-size: 48px;
+  font-family: var(--font-co-headline-corp);
+  font-weight: bold;
+  padding: 80px 0 48px 0;
+}
+
+.subscriptionsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+
+.subscriptionWrapper {
+  cursor: pointer;
+  width: 300px;
+  height: 351px;
+  position: relative;
+}
+
+.subscriptionStub {
+  width: 300px;
+  height: 300px;
+  background-color: var(--default-white-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: var(--font-co-headline-corp);
+  color: #d9d9d9;
+}
+
+.createSubscriptionWrapper {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23837F7FFF' stroke-width='1' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+  cursor: pointer;
+  z-index: 1;
+}
+
+.createSubscriptionStub {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: var(--font-co-headline-corp);
+  color: #837F7F;
+  transition: 0.125s ease;
+}
+
+.createSubscriptionIcon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  transition: 0.125s ease;
+  background-image: url("../pages/images/subscription_list/symbol_add_subscription.png");
+}
+
+.createSubscriptionStub:hover {
+  transform: scale(1.03);
+}
+
+.subscriptionImage {
+  height: 300px !important;
+  width: 300px !important;
+  border-radius: 20px;
+  transition: 0.125s ease;
+}
+
+.subscriptionImage:hover {
+  transform: scale(1.03);
+}
+
+.subscriptionTitle {
+  position: absolute;
+  bottom: 0;
+  margin-top: 24px;
+  font-size: 21px;
+  font-family: var(--font-co-headline-corp);
+}
+
+.subscriptionStatus {
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  top: 0;
+  right: 0;
+  margin: 24px;
+  font-size: 24px;
+  font-family: var(--font-co-headline-corp);
+  font-weight: bold;
+  background-color: var(--default-white-color);
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscriptionStatus:hover {
+  transform: scale(1.05);
+}
+
+.subscriptionSuccess {
+  background-color: var(--primary-green-color);
+}
+
+.subscriptionError {
+  background-color: var(--primary-red-color);
+}
